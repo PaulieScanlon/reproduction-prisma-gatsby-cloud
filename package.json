@@ -1,0 +1,37 @@
+{
+  "name": "reproduction-prisma-gatsby-cloud",
+  "version": "1.0.0",
+  "description": "Reproduction repo using Prisma with Gatsby Functions on Gatsby Cloud",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "yarn generate && gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev --name init"
+  },
+  "prisma": {
+    "schema": "./prisma/schema.prisma",
+    "seed": "node prisma/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/reproduction-prisma-gatsby-cloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/reproduction-prisma-gatsby-cloud/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/reproduction-prisma-gatsby-cloud#readme",
+  "dependencies": {
+    "@prisma/client": "^4.2.1",
+    "gatsby": "^4.21.1",
+    "prisma": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
