@@ -11,6 +11,7 @@ CREATE TABLE "user_dates" (
 CREATE TABLE "dates" (
     "id" INT8 NOT NULL DEFAULT unique_rowid(),
     "date" DATE NOT NULL,
+    "location" STRING NOT NULL,
 
     CONSTRAINT "dates_pkey" PRIMARY KEY ("id")
 );

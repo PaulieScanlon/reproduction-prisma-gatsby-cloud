@@ -19,5 +19,6 @@ model user_dates {
 model dates {
   id             BigInt           @id @default(autoincrement())
   date           DateTime         @db.Date
+  location       String
   user_dates user_dates[]
 }
